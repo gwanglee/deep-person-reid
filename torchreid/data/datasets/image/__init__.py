@@ -12,3 +12,4 @@ from .sensereid import SenseReID
 from .market1501 import Market1501
 from .dukemtmcreid import DukeMTMCreID
 from .personx import PersonX
+from .personx_spgan import PersonX_Spgan
