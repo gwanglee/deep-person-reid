@@ -20,7 +20,7 @@ __image_datasets = {
     'prid': PRID,
     'cuhk02': CUHK02,
     'personx': PersonX,
-    'psersonx_spgan': PersonX_Spgan
+    'personx_spgan': PersonX_Spgan
 }
 
 __video_datasets = {
