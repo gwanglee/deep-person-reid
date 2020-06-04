@@ -86,7 +86,10 @@ def reset_config(cfg, args):
         cfg.data.targets = args.targets
     if args.transforms:
         cfg.data.transforms = args.transforms
-
+    if args.test_only:
+        cfg.test.evaluate = args.test_only
+    if args.visrank:
+        cfg.test.visrank = args.visrank
 
 def main():
     parser = argparse.ArgumentParser(
@@ -115,6 +118,15 @@ def main():
     parser.add_argument(
         '--root', type=str, default='', help='path to data root'
     )
+
+    parser.add_argument(
+        '--test_only', type=bool, default=False, help='path to data root'
+    )
+
+    parser.add_argument(
+        '--visrank', type=bool, default=False, help='path to data root'
+    )
+
     parser.add_argument(
         'opts',
         default=None,
